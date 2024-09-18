@@ -6,7 +6,7 @@ document
     const phoneNumber = document.getElementById('phone-number').value;
     const pinNumber = document.getElementById('pin-number').value;
 
-    if (phoneNumber === '00' && pinNumber === '1234') {
+    if (phoneNumber === '01754678436' && pinNumber === '1234') {
       console.log('Welcome to home page');
       window.location.href = '/home-page.html';
     } else {

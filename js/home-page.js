@@ -6,7 +6,7 @@ document
     const moneyInput = document.getElementById('input-add-money').value;
     const pinInput = document.getElementById('input-pin-number').value;
 
-    if (pinInput === '000') {
+    if (pinInput === '0000') {
       const currentBalance =
         document.getElementById('current-balance').innerText;
 
