@@ -1,10 +1,10 @@
 document
-  .getElementById('btn-add-money')
+  .getElementById('btn-cash-out')
   .addEventListener('click', function (event) {
     event.preventDefault();
 
-    const moneyInput = document.getElementById('input-add-money').value;
-    const pinInput = document.getElementById('input-pin-number').value;
+    const moneyInput = document.getElementById('input-cash-out').value;
+    const pinInput = document.getElementById('input-cash-out-pin-number').value;
 
     if (pinInput === '000') {
       const currentBalance =
@@ -13,7 +13,7 @@ document
       const currentBalanceFloat = Number(currentBalance);
       const moneyInputFloat = Number(moneyInput);
 
-      const mainBalance = currentBalanceFloat + moneyInputFloat;
+      const mainBalance = currentBalanceFloat - moneyInputFloat;
       const updateBalance = document.getElementById('current-balance');
       updateBalance.innerText = mainBalance;
       // console.log(mainBalance);
